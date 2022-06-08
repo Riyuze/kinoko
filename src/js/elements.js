@@ -62,7 +62,7 @@ function resultItem(data, i) {
   const resultProbability = document.createElement('span');
   resultProbability.dataset.position = i;
   resultProbability.classList.add('result__item-probability');
-  resultProbability.innerText = `${data[0]}%`;
+  resultProbability.innerText = `No ${i+1} Result`;
   itemContainer.append(resultProbability);
 
   //const mushroomTitle = document.createElement('span');

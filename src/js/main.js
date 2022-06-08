@@ -68,4 +68,4 @@ function showLoader() {
 
 function clearApp() {
   rootNode.innerHTML = '';
-}
+} 
