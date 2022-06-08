@@ -2,6 +2,8 @@
 
 https://riyuze.github.io/kinoko/
 
+A simple website used to detect different kinds of mushroom species.
+
 
 ## Getting Started with Create React App
 
