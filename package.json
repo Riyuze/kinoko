@@ -1,7 +1,9 @@
 {
   "name": "kinoko",
+  "homepage": "https://riyuze.github.io/kinoko/",
+  "repository": "https://github.com/Riyuze/kinoko",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@tensorflow/tfjs": "^3.18.0",
     "@testing-library/jest-dom": "^5.16.4",
