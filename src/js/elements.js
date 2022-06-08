@@ -65,10 +65,10 @@ function resultItem(data, i) {
   resultProbability.innerText = `${data[0]}%`;
   itemContainer.append(resultProbability);
 
-  const mushroomTitle = document.createElement('span');
-  mushroomTitle.classList.add('result__item-title');
-  mushroomTitle.innerText = data[2];
-  itemContainer.append(mushroomTitle);
+  //const mushroomTitle = document.createElement('span');
+  //mushroomTitle.classList.add('result__item-title');
+  //mushroomTitle.innerText = data[2];
+  //itemContainer.append(mushroomTitle);
 
   itemContainer.append(document.createElement('br'));
 

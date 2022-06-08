@@ -16,7 +16,8 @@ export default async function processFile(imageNode) {
 async function predict(imageNode) {
   const location = window.location.pathname === '/' ? '/' : window.location.pathname;
   const model =
-    await tf.loadLayersModel(`${window.location.protocol}//${window.location.host}${location}static/model/model.json`);
+    await tf.loadGraphModel(`${window.location.protocol}//${window.location.host}${location}static/model/model.json`);
+
 
   try {
     const testPic = tf.browser.fromPixels(imageNode)
