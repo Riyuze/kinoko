@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/kinoko/static/js/main.a72d2178.js",
+    "index.html": "/kinoko/index.html",
+    "main.a72d2178.js.map": "/kinoko/static/js/main.a72d2178.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a72d2178.js"
+  ]
+}
