@@ -1,0 +1,35 @@
+import * as tf from '@tensorflow/tfjs';
+import { errorHandler } from './main';
+import { classes } from '../static/data/modelClasses.js';
+
+export default async function processFile(imageNode) {
+  const result = (await predict(imageNode));
+
+  const outputArr = Array.from(result)
+    .map((el, i) => [Math.floor(+el * 10000) / 100, classes[i][0]])
+    .sort((a, b) => b[0] - a[0])
+    .slice(0, 3);
+
+  return outputArr;
+}
+
+async function predict(imageNode) {
+  const location = window.location.pathname === '/' ? '/' : window.location.pathname;
+  const model =
+    await tf.loadLayersModel(`${window.location.protocol}//${window.location.host}${location}static/model/model.json`);
+
+  try {
+    const testPic = tf.browser.fromPixels(imageNode)
+      .resizeBilinear([224, 224])
+      .toFloat()
+      .expandDims();
+
+    const output = model.predict(testPic);
+    const result = await output.data();
+
+    return result;
+
+  } catch (error) {
+    errorHandler();
+  }
+}
