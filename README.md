@@ -4,6 +4,10 @@ https://riyuze.github.io/kinoko/
 
 A simple website used to detect different kinds of mushroom species.
 
+![Kinoko](https://github.com/Riyuze/kinoko/blob/main/Kinoko.gif)
+
+Model was made using Tensorflow and can be found here [Mushroom Classification](https://github.com/Riyuze/mushroom-classification).
+
 
 ## Getting Started with Create React App
 
